@@ -1,7 +1,6 @@
 package main
 
 import (
-	"IntroGOlang"
 	"testing"
 )
 
@@ -14,26 +13,26 @@ func TestHello(t *testing.T) {
 	}
 
 	t.Run("hello to people", func(t *testing.T) {
-		result := IntroGOlang.hello("João")
+		result := Hello("João")
 		expected := "Hello, João"
 		verify(t, result, expected)
 	})
 
 	t.Run("hello to people Spanish", func(t *testing.T) {
-		result := IntroGOlang.hello("João", "Spanish")
+		result := Hello("João", "Spanish")
 		expected := "Hola, João"
 		verify(t, result, expected)
 	})
 
 	t.Run("hello to people Russian", func(t *testing.T) {
-		result := IntroGOlang.hello("João", "Russian")
+		result := Hello("João", "Russian")
 		expected := "привет, João"
 		verify(t, result, expected)
 	})
 
 	t.Run("empty case hello world", func(t *testing.T) {
-		result := IntroGOlang.hello("")
-		expected := "Hello, world"
+		result := Hello("")
+		expected := "Hello, World"
 		verify(t, result, expected)
 	})
 }
