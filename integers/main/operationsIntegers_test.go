@@ -13,32 +13,32 @@ func TestInt(t *testing.T) {
 	}
 
 	t.Run("sum integers", func(t *testing.T) {
-		resulted := sum(1, 2, 3)
+		result := sum(1, 2, 3)
 		expected := 6
-		verify(t, resulted, expected)
+		verify(t, result, expected)
 	})
 
 	t.Run("subtract integers", func(t *testing.T) {
-		resulted := sub(10, 2, 5)
+		result := sub(10, 2, 5)
 		expected := 3
-		verify(t, resulted, expected)
+		verify(t, result, expected)
 	})
 
 	t.Run("multiply integers", func(t *testing.T) {
-		resulted := multi(2, 2)
+		result := multi(2, 2)
 		expected := 4
-		verify(t, resulted, expected)
+		verify(t, result, expected)
 	})
 
 	t.Run("divide integers", func(t *testing.T) {
-		resulted := div(2, 2)
+		result := div(2, 2)
 		expected := 1
-		verify(t, resulted, expected)
+		verify(t, result, expected)
 	})
 
 	t.Run("remainder integers", func(t *testing.T) {
-		resulted := rem(2, 2)
+		result := rem(2, 2)
 		expected := 0
-		verify(t, resulted, expected)
+		verify(t, result, expected)
 	})
 }

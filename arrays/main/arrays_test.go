@@ -6,18 +6,18 @@ import (
 
 func TestArrays(t *testing.T) {
 	t.Run("sum arrays", func(t *testing.T) {
-		resulted := sumArray([10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
+		result := sumArray([10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
 		expected := 6
-		if resulted != expected {
-			t.Errorf("got %v, want %v", resulted, expected)
+		if result != expected {
+			t.Errorf("got %v, want %v", result, expected)
 		}
 	})
 
 	t.Run("sum multi arrays", func(t *testing.T) {
-		resulted := sumSlice(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+		result := sumSlice(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 		expected := 15
-		if resulted != expected {
-			t.Errorf("got %v, want %v", resulted, expected)
+		if result != expected {
+			t.Errorf("got %v, want %v", result, expected)
 		}
 	})
 }

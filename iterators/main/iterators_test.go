@@ -3,17 +3,17 @@ package main
 import "testing"
 
 func TestIterators(t *testing.T) {
-	verify := func(t *testing.T, resulted, expected string) {
+	verify := func(t *testing.T, result, expected string) {
 		t.Helper()
-		if resulted != expected {
-			t.Errorf("expected %q, got %q", expected, resulted)
+		if result != expected {
+			t.Errorf("expected %q, got %q", expected, result)
 		}
 	}
 
 	t.Run("iteratores test", func(t *testing.T) {
-		resulted := iter(3, "*")
+		result := iter(3, "*")
 		expected := "***"
-		verify(t, resulted, expected)
+		verify(t, result, expected)
 	})
 }
 func BenchmarkInterators(b *testing.B) {
